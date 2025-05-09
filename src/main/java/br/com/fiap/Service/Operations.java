@@ -6,6 +6,7 @@ import jakarta.jws.soap.SOAPBinding;
 import jakarta.jws.soap.SOAPBinding.Style;
 @WebService
 @SOAPBinding(style = Style.RPC)
+
 public interface Operations {
 
     @WebMethod
@@ -18,5 +19,5 @@ public interface Operations {
     double opCalculate(double number1, double number2);
 
     @WebMethod
-    String opMessage();
+    String opMessage(double number1, double number2);
 }
